@@ -1,0 +1,152 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="frs.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <title>
+        <saveimage class="py"></saveimage>
+    </title>
+</head>
+
+<body>
+    <nav>
+        <div><a href="#home">Home</a></div>
+        <div><a href="#contactus">contact us</a></div>
+        <div><a href="#about">About us</a></div>
+        <div><a href="#">Log In</a></div>
+        <div><a href="#top">.</a></div>
+    </nav>
+    <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/3570/3570159.png" alt="">
+        <h1 id="home">Face Recognition system</h1>
+    </div>
+
+    <p class="clear">A facial recognition system is a technology capable of matching a human face from a digital image
+        or a video frame against
+        a database of faces. <br> Such a system is typically employed to authenticate users through ID verification
+        services,
+        and works by
+        pinpointing and measuring facial features from a given image.
+    </p>
+    <div>
+
+        <a href="#startok"><button class="button1">Get started<i
+                    class="fa-solid fa-arrow-right fa-beat"></i></button></a>
+    </div>
+    <div id="container">
+        <form action="/upload" method="post" enctype='multipart/form-data'>
+            <video id="vid" autoplay></video>
+            <script src="jrs.js"></script>
+
+            <h2 id="startok">Start Recognizing</h2>
+            <p class="para2-1">The camera detects and locates the image of a face,
+                either alone or in a crowd. The image may show the
+                person looking straight ahead or in profile.
+            </p>
+            <p class="para2-2">
+                Users only need to upload an image then our face
+            </p>
+            <input type="file" id="image-input" name="file" accept="image/png, image/jpg">
+            <input type="text" id="image-name" name="name" placeholder="Enter the image person name"
+                style="margin-left: 50px;">
+            <div>
+                <button type="button" class="buttons2"
+                    onclick="window.location.href='{{ url_for('detect')}}';">detect</button>
+                <button onclick="" type="submit" class="buttons2-1">Register</button>
+
+            </div>
+        </form>
+
+    </div>
+    <div class="contact">
+        <div>
+            <h2 id="contactus">Contact us</h2>
+
+            <form action="" class="form">
+                <h3><b> Feel free to ask anything</b></h3>
+                <p><input type="text" name="name" placeholder="Name"></p>
+                <p><input type="email" name="email" placeholder="Email"></p>
+                <p><textarea name="text" id="message" placeholder="message" cols="30" rows="10"></textarea></p>
+                <p><input type="submit" value="Sent Message"></p>
+            </form>
+        </div>
+        <div class="mapmargin">
+            <h3 class="map">Where you can find us</h3>
+            <p class="maploc"><i class="fa-solid fa-location-dot" style="color: #ff0000;"></i>Bareilly
+                College,bareilly,243001,Uttar pradesh,India</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1755.5513307910585!2d79.42254980462333!3d28.355745674864277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a0072b03e53e71%3A0x27841529cd474cbc!2sBareilly%20College!5e0!3m2!1sen!2sin!4v1684259610952!5m2!1sen!2sin"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+    </div>
+    <section class="team">
+        <h2 id="about">About us</h2>
+        <div class="center">
+            <h4>Our Team</h4>
+        </div>
+
+        <div class="team-content">
+            <div class="box">
+                <img src="../static/talha (2).jpeg">
+                <h3>Mohd Talha</h3>
+                <h5>Front-end developer</h5>
+                <div class="icons">
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="C:\Users\PC\Downloads\qaORomSzwebb.png">
+                <h3>Rishit Dhiman</h3>
+                <h5>Back-end developer</h5>
+                <div class="icons">
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="../static/Picsart_23-05-13_17-48-03-319.jpg">
+                <h3>Adarsh Kumar</h3>
+                <h5>Back-end developer</h5>
+                <div class="icons">
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="../static/fahad.jpeg">
+                <h3>Mohd Fahad</h3>
+                <h5>Front-end developer</h5>
+                <div class="icons">
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+</body>
+
+</html>
